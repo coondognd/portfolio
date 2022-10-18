@@ -1,0 +1,39 @@
+const ContactInfo = () => {
+  return (
+    <div className="content contacts">
+      {/* title */}
+      <div className="title">Get in Touch</div>
+      {/* content */}
+      <div className="row">
+        <div className="col col-d-12 col-t-12 col-m-12 border-line-v">
+          <div className="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48034.597406732304!2d-73.93655484943733!3d41.196434220013224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2b734e1e6e669%3A0xc397361688fca437!2sCroton-On-Hudson%2C%20NY%2010520!5e0!3m2!1sen!2sus!4v1665628394451!5m2!1sen!2sus"
+              style={{ border: 0, width: "100%", height: "100%" }}
+              allowFullScreen=""
+              loading="lazy"
+            />
+          </div>
+          <div className="info-list">
+            <ul>
+              <li>
+                <strong>Address</strong> Croton-on-Hudson, NY, USA
+              </li>
+              <li>
+                <strong>Email</strong> <a href="mailto:kevin@kevincooney.com">kevin@kevincooney.com</a>
+              </li>
+              <li>
+                <strong>Phone</strong> (914) 772-9993
+              </li>
+              <li>
+                <strong>LinkedIn</strong> <a href="http://www.linkedin.com/in/kevin-cooney-ny">http://www.linkedin.com/in/kevin-cooney-ny</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="clear" />
+      </div>
+    </div>
+  );
+};
+export default ContactInfo;
